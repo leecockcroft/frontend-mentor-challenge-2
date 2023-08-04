@@ -1,0 +1,213 @@
+
+
+:root{
+
+--mobile-max-width:375px;
+--desktop-max-width:1440px;
+--desaturatedRed:hsl(0, 36%, 70%);
+--softred: hsl(0, 93%, 68%);
+--darkGrayRed:hsl(0, 6%, 24%);
+
+}
+
+
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+html{
+  font-size:62.5%;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.body{
+  width:100%;
+  height:100vh;
+
+}
+.wrapper{
+
+  margin:auto;
+    height:100vh;
+}
+
+
+.container{
+  max-width:var(--mobile-max-width);
+
+}
+nav {
+  padding:2em;
+  height:10em;
+}
+
+nav img {
+      width: 14em;
+}
+
+header  {
+  background: url(./images/hero-desktop.jpg);
+      height: 33em;
+      width: 100%;
+      background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 7em;
+  background-position: 0em -6em;
+
+
+}
+
+.headerspan {
+color: var(--desaturatedRed);
+font-weight: 300;
+}
+
+section {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+
+
+}
+
+section h1 {
+  font-size:4em;
+line-height: 1.2;
+    letter-spacing: 0.4em;
+text-align: center;
+    text-transform: uppercase;
+}
+
+section p {
+  font-size:1.6em;
+  color: var(--desaturatedRed);
+  line-height: 1.4;
+      margin-top: 2em;
+    text-align: center;
+}
+
+
+.input-form{
+  width: 100%;
+      height: 3em;
+      border-radius: 5em;
+      padding:1em;
+      border:0.1em solid var(--desaturatedRed);
+    }
+
+    form {
+
+      width:90%;
+      margin-top:3em;
+    }
+
+    .img-wrapper{
+      background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    width: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 34%;
+    position: relative;
+    left: 23em;
+    height: 5em;
+    top: -4.5em;
+
+    }
+
+    form .arrow{
+
+      width:2em;
+      height:2em;
+
+    }
+
+    @media only screen and (min-width: 800px) {
+
+.wrapper{
+  display:flex;
+
+  justify-content: center;
+  align-items: center;
+  position:relative;
+}
+
+.container{
+    max-width:var(--desktop-max-width);
+    margin:auto;
+        display: flex;
+        flex-wrap:wrap;
+        height:100vh;
+
+}
+
+nav {
+width: 100%;
+position:absolute;
+}
+
+header{
+  order:3;
+}
+
+header,section{
+
+width:50%;
+height:100%;
+
+}
+
+
+form {
+  width: 38em;
+margin-top: 3em;
+position: relative;
+}
+
+section {
+
+}
+
+.section-main{
+
+
+  width:70%;
+}
+
+section h1,section p,form
+ {
+text-align:left;
+}
+
+section h1 {
+  font-size:5em;
+}
+
+section p {
+  line-height:1.9;
+}
+
+.input-form {
+height:4em;
+}
+
+.img-wrapper{
+  left: 29.4em;
+height: 5.1em;
+top: 0em;
+position: absolute;
+width: 7.8em;
+box-shadow: 0.4em 0.8em 0.8em var(--desaturatedRed);
+width: 9em;
+}
+
+
+}
+
+    }
