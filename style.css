@@ -136,6 +136,9 @@ section p {
   justify-content: center;
   align-items: center;
   position:relative;
+  background:url('./images/bg-pattern-desktop.svg');
+
+  background-repeat:no-repeat;
 }
 
 .container{
