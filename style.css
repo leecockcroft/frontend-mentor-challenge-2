@@ -72,10 +72,11 @@ font-weight: 300;
 }
 
 section {
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2em 2em;
 
 
 
